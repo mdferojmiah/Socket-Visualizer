@@ -1,0 +1,34 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  --canvas: 246 245 241;
+  --surface: 255 255 255;
+  --ink: 24 24 27;
+  --muted: 104 104 112;
+  --line: 226 224 217;
+  --kernel: 241 239 233;
+  --client: 37 99 235;
+  --server: 194 65 12;
+  --ok: 21 128 61;
+  --warn: 180 83 9;
+  --down: 159 18 57;
+}
+html,
+body,
+#root {
+  min-height: 100%;
+}
+body {
+  background: rgb(var(--canvas));
+  color: rgb(var(--ink));
+  font-family: Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
